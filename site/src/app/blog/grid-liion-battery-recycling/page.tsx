@@ -44,7 +44,7 @@ export default function GridLiionBatteryRecycling() {
         <h2 className="text-2xl font-bold mt-8 mb-4">Traction Updates</h2>
         <ul className="list-disc ml-6 mt-3 space-y-1 text-sm">
           <li>
-            <strong>Amperon Holdings</strong> raised <strong>$20M+ Series B</strong> in summer 2025
+            <strong>Amperon Holdings</strong> received a strategic investment by Acario <strong>$20M+ Series B</strong> in summer 2025
           </li>
           <li>
             <strong>Princeton NuEnergy</strong> raised <strong>$30M Series A</strong> in summer 2024

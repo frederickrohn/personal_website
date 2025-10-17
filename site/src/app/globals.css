@@ -5,6 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hide native cursor only where needed: on links and in marked sections */
-a { cursor: none; }
-.cursor-target, .cursor-target * { cursor: none; }
+/* Hide native cursor everywhere within the webpage */
+* {
+  cursor: none !important;
+}

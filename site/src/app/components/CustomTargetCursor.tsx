@@ -5,13 +5,11 @@ import { gsap } from 'gsap';
 export interface TargetCursorProps {
   targetSelector?: string;
   spinDuration?: number;
-  hideDefaultCursor?: boolean;
 }
 
 const CustomTargetCursor: React.FC<TargetCursorProps> = ({
   targetSelector = '.cursor-target',
-  spinDuration = 2,
-  hideDefaultCursor = true
+  spinDuration = 2
 }) => {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cornersRef = useRef<NodeListOf<HTMLDivElement>>(null);
@@ -39,10 +37,6 @@ const CustomTargetCursor: React.FC<TargetCursorProps> = ({
   useEffect(() => {
     if (!cursorRef.current) return;
 
-    const originalCursor = document.body.style.cursor;
-    if (hideDefaultCursor) {
-      document.body.style.cursor = 'none';
-    }
 
     const cursor = cursorRef.current;
     cornersRef.current = cursor.querySelectorAll<HTMLDivElement>('.target-cursor-corner');
@@ -311,9 +305,8 @@ const CustomTargetCursor: React.FC<TargetCursorProps> = ({
       }
 
       spinTl.current?.kill();
-      document.body.style.cursor = originalCursor;
     };
-  }, [targetSelector, spinDuration, moveCursor, constants, hideDefaultCursor]);
+  }, [targetSelector, spinDuration, moveCursor, constants]);
 
   useEffect(() => {
     if (!cursorRef.current || !spinTl.current) return;

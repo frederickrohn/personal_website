@@ -11,6 +11,12 @@ const CustomTargetCursor: React.FC<TargetCursorProps> = ({
   targetSelector = '.cursor-target',
   spinDuration = 2
 }) => {
+
+  // Don’t render on touch/tablet devices
+  if (typeof window !== "undefined" && !window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    return null;
+  }
+
   const cursorRef = useRef<HTMLDivElement>(null);
   const cornersRef = useRef<NodeListOf<HTMLDivElement>>(null);
   const spinTl = useRef<gsap.core.Timeline>(null);

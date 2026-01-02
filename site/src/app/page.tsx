@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 import TargetCursor from "@/app/components/CustomTargetCursor";
 
 export default function HomePage() {
-  const hobbies = ["basketball", "fifa"];
+  const hobbies = ["basketball (rockets fan)", "fifa"];
 
   return (
     <>
@@ -13,11 +13,13 @@ export default function HomePage() {
       <section>
         <h1 className="text-5xl font-bold">frederick rohn</h1>
         
-        <p className="mt-2 text-neutral-600">new grad from nyu cs, currently at servicenow building ai agents.</p>
-        <p className="mt-2 text-neutral-600">currently interested in robotics software & ai agents, but have always been interested in data infra.</p>
         <p className="mt-2 text-neutral-600">
-          contact me at
-          {" "}
+          {"nyu cs may 25. just joined "}
+          <a href="https://www.reformhq.com/" target="_blank" rel="noreferrer" className="cursor-target">reform</a>
+          {" as an fde."}
+        </p>
+        <p className="mt-2 text-neutral-600">
+          {"contact me at "}
           <a href="mailto:frederick.rohn@gmail.com" className="cursor-target">frederick.rohn@gmail.com</a>
           {", "}
           <a href="https://instagram.com/fredericknrohn" target="_blank" rel="noreferrer" className="cursor-target">fredericknrohn</a>

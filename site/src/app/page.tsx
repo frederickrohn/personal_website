@@ -67,6 +67,10 @@ export default function HomePage() {
           {"contact me at "}
           <a href="mailto:frederick.rohn@gmail.com" className="cursor-target">frederick.rohn@gmail.com</a>
           {", "}
+          <a href="https://github.com/frederickrohn" target="_blank" rel="noreferrer" className="cursor-target">frederickrohn</a>
+          {" on github, "}
+          <a href="https://x.com/frederickrohn" target="_blank" rel="noreferrer" className="cursor-target">frederickrohn</a>
+          {" on twitter, "}
           <a href="https://instagram.com/fredericknrohn" target="_blank" rel="noreferrer" className="cursor-target">fredericknrohn</a>
           {" on insta, or "}
           <a href="https://www.linkedin.com/in/frederickrohn" target="_blank" rel="noreferrer" className="cursor-target">frederickrohn</a>

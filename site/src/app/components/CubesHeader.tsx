@@ -34,7 +34,7 @@ const CubesHeader: React.FC<CubesHeaderProps> = ({
       justifyContent: 'center', 
       alignItems: 'center' 
     }}>
-      <Cubes 
+      <Cubes
         gridSize={gridSize}
         maxAngle={maxAngle}
         radius={radius}
@@ -42,6 +42,7 @@ const CubesHeader: React.FC<CubesHeaderProps> = ({
         rippleSpeed={rippleSpeed}
         autoAnimate={autoAnimate}
         rippleOnClick={rippleOnClick}
+        faceColor="#fbfaf4"
       />
     </div>
   );

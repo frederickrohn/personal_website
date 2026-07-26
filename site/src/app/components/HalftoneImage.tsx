@@ -18,7 +18,7 @@ export default function HalftoneImage() {
         gridNoise={0.7}
         type="ink"
         softness={1}
-        contrast={1}
+        contrast={0.8}
         floodC={0.15}
         floodM={0}
         floodY={0}
@@ -29,7 +29,7 @@ export default function HalftoneImage() {
         gainK={0}
         grainMixer={0}
         grainOverlay={0}
-        grainSize={0.5}
+        grainSize={0.3}
         fit="cover"
       />
     </div>

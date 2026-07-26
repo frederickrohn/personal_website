@@ -14,9 +14,9 @@ export default function HomePage() {
         <div className="flex justify-center flex-1">
           <main className="max-w-xl px-4 py-16 space-y-12">
             <section>
-              <h1 className="text-5xl font-semibold border-b border-gray-400 py-2">frederick rohn</h1>
+              <h1 className="font-[family-name:var(--font-serif)] text-7xl sm:text-8xl font-normal leading-[0.85] tracking-tight border-b border-gray-400 pb-4">frederick rohn</h1>
 
-              <p className="mt-2 text-neutral-600">
+              <p className="mt-4 text-neutral-600">
                 {"nyu cs may 25. just joined "}
                 <a href="https://www.reformhq.com/" target="_blank" rel="noreferrer" className="cursor-target">reform</a>
                 {" as an fde."}
